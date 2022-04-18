@@ -1,7 +1,7 @@
 node{
      
     stage("Git clone"){
-       git branch: 'main', credentialsId: 'GIT_CREDENTIALS', url: 'https://github.com/RT-Technologies/spring-boot-mongo-docker.git'
+       git branch: 'main', credentialsId: 'GIT_CREDENTIALS', url: 'https://github.com/parameshinfo/RT-Tech.git'
     }
     
     stage("Maven Build jar"){
