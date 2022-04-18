@@ -8,9 +8,6 @@ node{
       
       def mavenHome =  tool name: "Maven_3.8.1", type: "maven"
       def mavenCMD = "${mavenHome}/bin/mvn"
-      sh "${mavenCMD} clean package"
+      sh "${mavenCMD} clean install"
     } 
-    stage('Build Docker Image'){
-        sh "docker build -t dockerid901999/spring-boot-mongo ."
-    }
  }
