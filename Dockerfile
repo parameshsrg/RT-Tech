@@ -1,4 +1,4 @@
-FROM eclipse-temurin:8-jre-alpine
+FROM amazoncorretto:8-alpine
 
 # Required for starting application up.
 RUN apk update && apk add /bin/sh
